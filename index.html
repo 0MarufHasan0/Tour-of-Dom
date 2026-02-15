@@ -11,6 +11,15 @@
         #food-section{
 
             color: aquamarine;
+            background-color: green;
+        }
+
+        .bg-food{
+            background-color: coral;
+        }
+
+        .bg-text{
+            font-size: 100px;
         }
         #nothing{
             color: blueviolet;
@@ -34,6 +43,24 @@
         .dream{
             color: rgb(246, 250, 215);
         }
+
+
+
+
+
+
+.food .foreign{
+    font-weight: 700 ;
+    color: red;
+    font-size: 70px;
+}
+
+
+
+
+
+
+
     </style>
     <link rel="stylesheet" href="./styles/style.css">
 </head>
@@ -42,15 +69,21 @@
         <h1>This is my Header with no banner</h1>
     </header>
     <main>
-       <section>
+       <section id="old-dhaka" class="songs">
          <h1>Welcome to  my Dom </h1>
+         <p>Lorem ipsum dolor sit, <span>amet</span> consectetur <span>Oli Goli</span>. Perspiciatis, sequi! </p>
+         <h1>ashd <span>some task</span> sdfh</h1>
+
         <ul>
             <li>Safayet</li>
             <li>Bonobash</li>
-            <li>Jalali set</li>
+            <li  class="international">dubai</li>
             <li>Dom De  re  baba</li>
         </ul>
-       </section>
+
+    </section>
+
+       <section class="food">  
        <h1   id="food-section">Foods I  love</h1>
        <ul >
         <li>Rice</li>
@@ -121,11 +154,11 @@ for(const li of liCollection){ //   ekhane li  dia li  er  list dekte pparba
 
 // get By  Id
 
-const foodTitleH1= document.getElementById('food-section')
+// const foodTitleH1= document.getElementById('food-section')
 
-    console.log(foodTitleH1.innerText);
+//     console.log(foodTitleH1.innerText);
 
-    foodTitleH1.innerText = 'Foods I loved eat' //  jekono  kisu  likha change  kora jay
+//     foodTitleH1.innerText = 'Foods I loved eat' //  jekono  kisu  likha change  kora jay
 
  const   changeFoodItem = document.getElementById('i-want')
  changeFoodItem.innerText =  'Dove'
@@ -157,6 +190,64 @@ for(element  of subjectName){
 const gameChanges=document.getElementById('game')
 gameChanges.innerText='E-footbball, Cricket,Mobile Legend.'
 console.log(gameChanges);
+
+
+// Query Selector    all ............
+
+
+const spanElemets = document.querySelectorAll('#old-dhaka p span') // ekhane  tomar ekta section id theke p tag er modhe span tag ber kora  and dpan ki  likha ase ber kora
+
+
+for (const element of spanElemets){
+    console.log(element);
+    console.log(element.innerText);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Java script dia css use kora  **** prothome sotohater  then bboro  hater
+// jemon  background-color amora eyvabe use kori kintu amra java script  a *** backgroundColor   ey  vabe  lekbo
+
+const foodTitleH1= document.getElementById('food-section')
+foodTitleH1.style.backgroundColor='yellow'
+foodTitleH1.style.border='2px solid green'
+foodTitleH1.style.borderRadius='100000px'
+foodTitleH1.style.padding='20px'
+foodTitleH1.style.textAlign='center'
+
+
+
+
+
+console.log(foodTitleH1);
+
+
+
+// Java script kono  class  add ba remove  korar khetre
+
+const foodTitleH2= document.getElementById('food-section')
+foodTitleH2.classList.add('bg-text')
+console.log(foodTitleH2);
+
+
+
+
+
+
+
+
+
 
 </script>
     <script src="js/hello.js"></script>
