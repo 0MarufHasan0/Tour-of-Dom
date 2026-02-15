@@ -8,6 +8,10 @@
         h1{
             color: gold;
         }
+        #food-section{
+
+            color: aquamarine;
+        }
     </style>
     <link rel="stylesheet" href="./styles/style.css">
 </head>
@@ -16,14 +20,31 @@
         <h1>This is my Header with no banner</h1>
     </header>
     <main>
-        <h1>Welcome to  my Dom </h1>
+       <section>
+         <h1>Welcome to  my Dom </h1>
         <ul>
             <li>Safayet</li>
             <li>Bonobash</li>
             <li>Jalali set</li>
             <li>Dom De  re  baba</li>
         </ul>
-    </main>
+       </section>
+       <h1   id="food-section">Foods I  love</h1>
+       <ul>
+        <li>Rice</li>
+        <li class="foreign">Potato</li>
+        <li>Fish</li>
+        <li>Banana</li>
+        <li>Mango</li>
+        <li id="i-want">Lichi</li>
+        <li class="foreign">Cake</li>
+        <li class="foreign">Burger</li>
+       </ul>
+
+       <section>
+
+       </section>
+        </main>
 <script>
 //     console.log("Hello javaScript !!!")
 
@@ -49,14 +70,42 @@ const  liCollection = document.getElementsByTagName('li')
 // console.log(liCollection);
 
 for(const li of liCollection){ //   ekhane li  dia li  er  list dekte pparba
-    console.log(li.innerText);  // .innerText   dia li  er name  gula 
+    // console.log(li.innerText);  // .innerText   dia li  er name  gula 
 }
+
+
 
 // all     h1 tags
  const    allHeadings= document.getElementsByTagName('h1');
  for(const heading     of  allHeadings){
-    console.log(heading.innerText);
+    // console.log(heading.innerText);
  }
+
+
+
+// get By  Id
+
+const foodTitleH1= document.getElementById('food-section')
+
+    console.log(foodTitleH1.innerText);
+
+    foodTitleH1.innerText = 'Foods I loved eat' //  jekono  kisu  likha change  kora jay
+
+ const   changeFoodItem = document.getElementById('i-want')
+ changeFoodItem.innerText =  'Dove'
+
+//  get by classname
+
+const  foreignFoodChanges=document.getElementsByClassName('foreign')
+console.log(foreignFoodChanges);
+
+
+for  ( const element of  foreignFoodChanges){
+    console.log(element);
+    console.log(element.innerText);
+}
+
+
 </script>
     <script src="js/hello.js"></script>
 </body>
