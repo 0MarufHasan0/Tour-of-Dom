@@ -12,6 +12,28 @@
 
             color: aquamarine;
         }
+        #nothing{
+            color: blueviolet;
+            font-size: 50px;
+            font-weight: 500;
+            border: 2px solid red;
+            width: 30%;
+        }
+
+        #nothing1{
+             border: 2px solid red;
+            width: 30%;
+
+        }
+        .subject{
+            color: chartreuse;
+        }
+        .game{
+            color: rgb(0, 162, 255);
+        }
+        .dream{
+            color: rgb(246, 250, 215);
+        }
     </style>
     <link rel="stylesheet" href="./styles/style.css">
 </head>
@@ -30,7 +52,7 @@
         </ul>
        </section>
        <h1   id="food-section">Foods I  love</h1>
-       <ul>
+       <ul >
         <li>Rice</li>
         <li class="foreign">Potato</li>
         <li>Fish</li>
@@ -44,6 +66,20 @@
        <section>
 
        </section>
+
+       <Section>
+        <h1 id="nothing">Nothing Just typing</h1>
+        <ul id="nothing1" >
+            <li class="subject">Physic</li>
+            <li  id="Device">PC,Mobile</li>
+            <li id="game">Pubg,Roblox,Son of forest</li>
+            <li class="subject">Math</li>
+            <li class="subject">Chemistry</li>
+            <li id="dream">WebDev</li>
+            <li id="Cartoon">Tom & jerry ,Gopal var,Ben  Ten</li>
+            <li class="subject">Zoology</li>
+        </ul>
+       </Section>
         </main>
 <script>
 //     console.log("Hello javaScript !!!")
@@ -101,10 +137,26 @@ console.log(foreignFoodChanges);
 
 
 for  ( const element of  foreignFoodChanges){
+    console.log(element);  //  Li  html   tag soho show  korbe  
+    console.log(element.innerText); 
+}
+
+
+//
+
+// Get  By  Class  Name
+const subjectName=document.getElementsByClassName('subject');
+console.log(subjectName)
+for(element  of subjectName){
     console.log(element);
     console.log(element.innerText);
 }
 
+// Get  By  Id  
+
+const gameChanges=document.getElementById('game')
+gameChanges.innerText='E-footbball, Cricket,Mobile Legend.'
+console.log(gameChanges);
 
 </script>
     <script src="js/hello.js"></script>
