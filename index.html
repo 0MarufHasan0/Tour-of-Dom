@@ -113,6 +113,20 @@
             <li class="subject">Zoology</li>
         </ul>
        </Section>
+
+
+
+<section id="players-container">
+    <h1>players</h1>
+    <ul>
+        <li>Messi</li>
+        <li>Pele</li>
+        <li>Ronaldo</li>
+        <li>Embape</li>
+    </ul>
+</section>
+
+
         </main>
 <script>
 //     console.log("Hello javaScript !!!")
@@ -166,12 +180,12 @@ for(const li of liCollection){ //   ekhane li  dia li  er  list dekte pparba
 //  get by classname
 
 const  foreignFoodChanges=document.getElementsByClassName('foreign')
-console.log(foreignFoodChanges);
+// console.log(foreignFoodChanges);
 
 
 for  ( const element of  foreignFoodChanges){
     console.log(element);  //  Li  html   tag soho show  korbe  
-    console.log(element.innerText); 
+    // console.log(element.innerText); 
 }
 
 
@@ -182,14 +196,14 @@ const subjectName=document.getElementsByClassName('subject');
 console.log(subjectName)
 for(element  of subjectName){
     console.log(element);
-    console.log(element.innerText);
+    // console.log(element.innerText);
 }
 
 // Get  By  Id  
 
 const gameChanges=document.getElementById('game')
 gameChanges.innerText='E-footbball, Cricket,Mobile Legend.'
-console.log(gameChanges);
+// console.log(gameChanges);
 
 
 // Query Selector    all ............
@@ -200,7 +214,7 @@ const spanElemets = document.querySelectorAll('#old-dhaka p span') // ekhane  to
 
 for (const element of spanElemets){
     console.log(element);
-    console.log(element.innerText);
+    // console.log(element.innerText);
 
 }
 
@@ -230,7 +244,7 @@ foodTitleH1.style.textAlign='center'
 
 
 
-console.log(foodTitleH1);
+// console.log(foodTitleH1);
 
 
 
@@ -238,7 +252,19 @@ console.log(foodTitleH1);
 
 const foodTitleH2= document.getElementById('food-section')
 foodTitleH2.classList.add('bg-text')
-console.log(foodTitleH2);
+
+//  Attribute set kora ba  pawa orthat id ba class ase kina ..abar  set korar jonno
+
+foodTitleH2.getAttribute('id')
+
+// Attribute set korar jonno
+
+foodTitleH2.setAttribute('title','Title or tooltip by js')
+
+// console.log(foodTitleH2);
+
+
+
 
 
 
@@ -251,5 +277,6 @@ console.log(foodTitleH2);
 
 </script>
     <script src="js/hello.js"></script>
+    <script src="js/cssin.js"></script>
 </body>
 </html>
