@@ -1,4 +1,5 @@
 console.log('third  file')
+// li add korac
 // get  the parent 
 const thirdList =document.getElementById('third-list')
 
